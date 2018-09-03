@@ -1,5 +1,6 @@
 # NTU GPA Calculator
 
+Life is hard. Calculating GPA by hand is harder.
 Save your precious time!
 
 ### The website
