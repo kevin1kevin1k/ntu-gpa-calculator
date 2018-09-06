@@ -21,3 +21,4 @@ Please refer to the website above for more information about the URL needed.
 ### Acknowledgements
 
 - Thanks my friend 林宇宸 for identifying the bug related to grade F.
+- Thanks my friend 曹峻寧 for reminding me of FLOLAC in major GPA.
