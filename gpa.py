@@ -31,7 +31,7 @@ def get_gpa(url):
     df.loc[:, 'GP'] = df.loc[:, '成績'].apply(lambda s: grade2point[s])
 
     def is_major(code):
-        return any([code.startswith(cs) for cs in ['902', '922', '944']])
+        return code == '725 U3500' or any([code.startswith(cs) for cs in ['902', '922', '944']])
 
     df_major = df[df['課程識別碼'].apply(is_major)]
 
