@@ -47,9 +47,9 @@ def get_gpa(url):
 
     def calc_GPA(df):
         sum_GP = sum(df.apply(lambda row: row['學分'] * row['GP'], axis=1))
-        sum_GP_STD = sum(df.apply(lambda row: row['學分'] * row['GP_std'], axis=1))
+        sum_GP_std = sum(df.apply(lambda row: row['學分'] * row['GP_std'], axis=1))
         sum_credits = sum(df['學分'])
-        return (sum_GP / sum_credits, sum_GP_STD / sum_credits)
+        return sum_GP / sum_credits, sum_GP_std / sum_credits
 
     gpa_overall, gpa_overall_std = calc_GPA(df)
     gpa_major, gpa_major_std = calc_GPA(df_major)
@@ -61,4 +61,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
